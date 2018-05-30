@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-5">
+            <h2>Two way binding</h2>
+            <input type="text" placeholder="Input text here" class="form-control" [(ngModel)]="twowayBinding" />
+            <span>Text: {{ twowayBinding }} </span>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+
+        <div class="col-md-5">
+            <h2>Long hand Two way binding</h2>
+            <input type="text" placeholder="Input text here" class="form-control" [ngModel]="longhandTwowayDatabinging" (ngModelChange)="longhandTwowayDatabinging = $event" />
+            <span>Text: {{ longhandTwowayDatabinging }} </span>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-5">
+            <h1>One way binding</h1>
+            <input type="text" placeholder="Input text here" class="form-control" [ngModel]="onewayBinding" />
+            <span>Text: {{ onewayBinding }} </span>
+        </div>
+    </div>
+</div>
