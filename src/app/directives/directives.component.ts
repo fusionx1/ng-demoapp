@@ -33,7 +33,6 @@ export class DirectivesComponent implements OnInit {
 
   constructor() {
 
-
   }
 
   ngOnInit() {
@@ -50,7 +49,7 @@ export class DirectivesComponent implements OnInit {
 
   }
 
-  removeUser(userId: number) {
+  removeUser(userId: number): void {
     this.users = this.users.filter(obj => obj.userId !== userId);
   }
 

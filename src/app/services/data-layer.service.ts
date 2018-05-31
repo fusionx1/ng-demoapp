@@ -24,6 +24,16 @@ export class DataLayerService {
     userId: 3,
     userName: 'UserC',
     date: this.date
+  },
+  {
+    userId: 4,
+    userName: 'UserD',
+    date: this.date
+  },
+  {
+    userId: 5,
+    userName: 'UserE',
+    date: this.date
   }];
 
   constructor() {

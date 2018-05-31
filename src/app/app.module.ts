@@ -13,6 +13,7 @@ import { DatabindingComponent } from './databinding/databinding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { ServicesComponent } from './services/services.component';
 import { DataLayerService } from './services/data-layer.service';
+import { DigitaloceanComponent } from './digitalocean/digitalocean.component';
 
 const appRoutes: Routes  = [
   {
@@ -23,6 +24,10 @@ const appRoutes: Routes  = [
   {
       path: 'dashboard',
       component: DashboardComponent
+  },
+  {
+      path: 'digitalocean',
+      component: DigitaloceanComponent
   },
   {
       path: 'databinding',
@@ -53,7 +58,8 @@ const appRoutes: Routes  = [
     PostsComponent,
     DatabindingComponent,
     DirectivesComponent,
-    ServicesComponent
+    ServicesComponent,
+    DigitaloceanComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +67,7 @@ const appRoutes: Routes  = [
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    DataLayerService
+    
   ],
   bootstrap: [AppComponent]
 })

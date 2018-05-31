@@ -14,7 +14,7 @@ export class ServicesComponent implements OnInit {
   users: any[];
   myStyle: any;
   constructor(private dataLayerService: DataLayerService) {
-    this.myStyle = dataLayerService.myStyle;
+    this.myStyle = dataLayerService.myStyle;  
   }
 
   ngOnInit() {
